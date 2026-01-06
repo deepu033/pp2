@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub Campus - College Event Management Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>EventHub Campus</h1>
+            </div>
+            <div class="navbar-actions">
+                <button class="btn btn-outline" id="login-nav-btn">
+                    <i class="fas fa-sign-in-alt"></i> Login/Register
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Section -->
+    <div id="home-page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to EventHub Campus</h1>
+                    <p class="hero-subtitle">Your Central Hub for College Event Management with Complete Transparency</p>
+                    <div class="hero-description">
+                        <p>Discover, register, and manage college events seamlessly. From cultural festivals to tech symposiums, find all events in one place with real-time updates and transparent fund tracking.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="explore-events-btn">
+                            <i class="fas fa-search"></i> Explore Events
+                        </button>
+                        <button class="btn btn-outline" id="learn-more-btn">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose EventHub?</h2>
+                <p class="section-subtitle">Comprehensive event management for colleges</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Easy Event Discovery</h3>
+                        <p>Browse and discover all upcoming college events in one centralized platform. Filter by category, city, and date to find what interests you.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3>QR Pass System</h3>
+                        <p>Get instant digital QR passes after registration. No physical tickets needed - just scan at the event entrance for seamless entry.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Fund Transparency</h3>
+                        <p>Complete visibility into event funds. See where money comes from and how it's spent - promoting trust and accountability.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Sponsor Management</h3>
+                        <p>Connect with sponsors easily. AI-powered recommendations help identify and manage sponsorships for event success.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Real-time Analytics</h3>
+                        <p>Track attendance, engagement, and financial metrics in real-time with comprehensive dashboards and detailed reports.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Crowd Management</h3>
+                        <p>Manage event capacity and attendance with real-time entry tracking, ensuring smooth and organized events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">About EventHub Campus</h2>
+                <p class="section-subtitle">Revolutionizing college event management</p>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>A New Era of Event Management</h3>
+                        <p>EventHub Campus is built for modern colleges that value transparency, efficiency, and student engagement. Our platform brings together all aspects of event management in one intuitive interface.</p>
+                        
+                        <h4>For Students & Faculty:</h4>
+                        <ul class="about-list">
+                            <li><i class="fas fa-check-circle"></i> Discover and register for events instantly</li>
+                            <li><i class="fas fa-check-circle"></i> Get digital QR passes for easy entry</li>
+                            <li><i class="fas fa-check-circle"></i> View event details, location, and organizer info</li>
+                            <li><i class="fas fa-check-circle"></i> Track your registrations and attendance</li>
+                        </ul>
+                        
+                        <h4>For Administrators:</h4>
+                        <ul class="about-list">
+                            <li><i class="fas fa-check-circle"></i> Create and manage all college events</li>
+                            <li><i class="fas fa-check-circle"></i> Track fund collections and expenses</li>
+                            <li><i class="fas fa-check-circle"></i> Manage sponsors and stall bookings</li>
+                            <li><i class="fas fa-check-circle"></i> Monitor attendance with QR scanning</li>
+                            <li><i class="fas fa-check-circle"></i> Generate detailed analytics reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Events Managed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">₹10L+</div>
+                        <div class="stat-label">Funds Tracked</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">User Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Manage Events Better?</h2>
+                <p>Join thousands of colleges already using EventHub Campus</p>
+                <button class="btn btn-primary btn-large" id="get-started-btn">
+                    <i class="fas fa-rocket"></i> Get Started Now
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>EventHub Campus</h4>
+                        <p>Transparent college event management platform</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 EventHub Campus. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Dashboard Page (Hidden until login) -->
+    <div id="dashboard-page" class="hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-content">
+                <div class="header-logo">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h1 id="header-title">EventHub Dashboard</h1>
+                </div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="dashboard-search" placeholder="Search events, sponsors, transactions...">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-avatar" id="user-avatar">U</div>
+                        <span id="user-display-name">User</span>
+                        <button class="logout-btn" id="logout-btn">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="dashboard-content">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" data-page="dashboard">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="events">
+                            <i class="fas fa-calendar-plus"></i>
+                            <span>Events</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="passes">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>My Passes</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="funds">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Funds</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="sponsors">
+                            <i class="fas fa-handshake"></i>
+                            <span>Sponsors</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="stalls">
+                            <i class="fas fa-store"></i>
+                            <span>Stalls</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="crowd">
+                            <i class="fas fa-users"></i>
+                            <span>Crowd</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="reports">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-page="profile">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="sidebar-footer">
+                    <p>EventHub v2.0</p>
+                    <p>Transparent Management</p>
+                </div>
+            </aside>
+            
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <!-- Dashboard Page -->
+                <div class="page active" id="dashboard-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Dashboard</h2>
+                            <p class="page-subtitle">Overview of activities and key metrics</p>
+                        </div>
+                        <div id="admin-actions">
+                            <button class="btn btn-primary" id="quick-add-event">
+                                <i class="fas fa-plus"></i> Add Event
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card events">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>18</h3>
+                                <p>Upcoming Events</p>
+                            </div>
+                        </div>
+                        <div class="stat-card funds">
+                            <div class="stat-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>₹2,85,000</h3>
+                                <p>Total Funds Collected</p>
+                            </div>
+                        </div>
+                        <div class="stat-card sponsors">
+                            <div class="stat-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>14</h3>
+                                <p>Active Sponsors</p>
+                            </div>
+                        </div>
+                        <div class="stat-card crowd">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>2,150</h3>
+                                <p>Expected Attendees</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3 class="table-title">Recent Events</h3>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Event Name</th>
+                                    <th>Date</th>
+                                    <th>Registrations</th>
+                                    <th>Capacity</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dashboard-events-table">
+                                <!-- Events populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Events Page -->
+                <div class="page" id="events-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Events</h2>
+                            <p class="page-subtitle">Manage all college events</p>
+                        </div>
+                        <button class="btn btn-primary" id="add-event-btn">
+                            <i class="fas fa-plus"></i> Add Event
+                        </button>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3 class="table-title">All Events</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                                <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+                                <button class="filter-btn" data-filter="past">Past</button>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Event Name</th>
+                                    <th>Date & Time</th>
+                                    <th>Venue</th>
+                                    <th>Capacity</th>
+                                    <th>Registered</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="events-table">
+                                <!-- Events populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Funds Page -->
+                <div class="page" id="funds-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Fund Transparency</h2>
+                            <p class="page-subtitle">Track financial transactions</p>
+                        </div>
+                        <button class="btn btn-primary" id="add-transaction-btn">
+                            <i class="fas fa-plus"></i> Add Transaction
+                        </button>
+                    </div>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #e6f4ea; color: var(--secondary-color);">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>₹3,50,000</h3>
+                                <p>Total Funds Collected</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #fce8e6; color: var(--accent-color);">
+                                <i class="fas fa-receipt"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>₹2,15,000</h3>
+                                <p>Total Expenses</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #e8f0fe; color: var(--primary-color);">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>₹1,35,000</h3>
+                                <p>Current Balance</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3 class="table-title">Fund Transactions</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                    <th>Approved By</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactions-table">
+                                <!-- Transactions populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sponsors Page -->
+                <div class="page" id="sponsors-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Sponsor Management</h2>
+                            <p class="page-subtitle">Manage sponsors and AI suggestions</p>
+                        </div>
+                        <button class="btn btn-primary" id="add-sponsor-btn">
+                            <i class="fas fa-plus"></i> Add Sponsor
+                        </button>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3 class="table-title">Current Sponsors</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sponsor Name</th>
+                                    <th>Contact Person</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="sponsors-table">
+                                <!-- Sponsors populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Stalls Page -->
+                <div class="page" id="stalls-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Stall Bookings</h2>
+                            <p class="page-subtitle">Manage vendor stall bookings</p>
+                        </div>
+                        <button class="btn btn-primary" id="add-booking-btn">
+                            <i class="fas fa-plus"></i> Add Booking
+                        </button>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3 class="table-title">All Stall Bookings</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Booking ID</th>
+                                    <th>Vendor Name</th>
+                                    <th>Event</th>
+                                    <th>Stall Type</th>
+                                    <th>Amount</th>
+                                    <th>Booking Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookings-table">
+                                <!-- Bookings populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Crowd Page -->
+                <div class="page" id="crowd-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Crowd Management</h2>
+                            <p class="page-subtitle">Real-time entry tracking with QR passes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #e8f0fe; color: var(--primary-color);">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>1,250</h3>
+                                <p>QR Passes Generated</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #e6f4ea; color: var(--secondary-color);">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>845</h3>
+                                <p>Checked In Today</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #fef7e0; color: var(--warning-color);">
+                                <i class="fas fa-user-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>405</h3>
+                                <p>Expected Remaining</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3 class="table-title">Real-time Entry Tracking</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Name</th>
+                                    <th>Event</th>
+                                    <th>Entry Point</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="crowd-table">
+                                <!-- Crowd data populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Reports Page -->
+                <div class="page" id="reports-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">Reports & Analytics</h2>
+                            <p class="page-subtitle">Generate detailed reports</p>
+                        </div>
+                        <button class="btn btn-primary" id="export-reports-btn">
+                            <i class="fas fa-download"></i> Export Reports
+                        </button>
+                    </div>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #e8f0fe; color: var(--primary-color);">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>85%</h3>
+                                <p>Average Attendance</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #e6f4ea; color: var(--secondary-color);">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>₹4.2L</h3>
+                                <p>Total Revenue</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background-color: #fce8e6; color: var(--accent-color);">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>5,200</h3>
+                                <p>Total Participants</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passes Page -->
+                <div class="page" id="passes-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">My Event Passes</h2>
+                            <p class="page-subtitle">QR passes for your registered events</p>
+                        </div>
+                    </div>
+                    
+                    <div id="user-passes-container">
+                        <!-- Passes will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Profile Page -->
+                <div class="page" id="profile-page-content">
+                    <div class="page-header">
+                        <div>
+                            <h2 class="page-title">My Profile</h2>
+                            <p class="page-subtitle">Manage your account information</p>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <div style="display: flex; gap: 30px; align-items: center; margin-bottom: 30px;">
+                            <div class="user-avatar" style="width: 80px; height: 80px; font-size: 32px;" id="profile-avatar">U</div>
+                            <div>
+                                <h3 style="margin-bottom: 5px;" id="profile-name">User Name</h3>
+                                <p style="color: #5f6368;" id="profile-email">user@example.com</p>
+                                <p style="color: #5f6368;" id="profile-role">Role</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--dark-color);">Account Information</h4>
+                                <p><strong>College:</strong> <span id="profile-college">N/A</span></p>
+                                <p><strong>Phone:</strong> <span id="profile-phone">N/A</span></p>
+                                <p><strong>Member Since:</strong> <span id="profile-joined">N/A</span></p>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--dark-color);">Event Statistics</h4>
+                                <p><strong>Events Registered:</strong> <span id="profile-registered">0</span></p>
+                                <p><strong>Events Attended:</strong> <span id="profile-attended">0</span></p>
+                                <p><strong>Upcoming Events:</strong> <span id="profile-upcoming">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">EventHub Campus</h3>
+                <button class="modal-close" id="close-login-modal">&times;</button>
+            </div>
+            
+            <div class="modal-tabs">
+                <button class="modal-tab active" id="modal-login-tab">Login</button>
+                <button class="modal-tab" id="modal-register-tab">Register</button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Login Form -->
+                <form class="modal-form active" id="modal-login-form">
+                    <div class="form-group">
+                        <label for="modal-email">Email Address</label>
+                        <input type="email" id="modal-email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-password">Password</label>
+                        <input type="password" id="modal-password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-usertype">Login As</label>
+                        <select id="modal-usertype" class="form-control" required>
+                            <option value="user">Student / Faculty</option>
+                            <option value="admin">Administrator</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                    <p class="modal-footer-text">Demo: admin@example.com / admin123</p>
+                </form>
+
+                <!-- Register Form -->
+                <form class="modal-form" id="modal-register-form">
+                    <div class="form-group">
+                        <label for="modal-reg-name">Full Name</label>
+                        <input type="text" id="modal-reg-name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-reg-email">Email Address</label>
+                        <input type="email" id="modal-reg-email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-reg-password">Password</label>
+                        <input type="password" id="modal-reg-password" class="form-control" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-reg-confirm">Confirm Password</label>
+                        <input type="password" id="modal-reg-confirm" class="form-control" placeholder="Confirm password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-reg-role">Role</label>
+                        <select id="modal-reg-role" class="form-control" required>
+                            <option value="student">Student</option>
+                            <option value="faculty">Faculty</option>
+                            <option value="organizer">Event Organizer</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-user-plus"></i> Register
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
